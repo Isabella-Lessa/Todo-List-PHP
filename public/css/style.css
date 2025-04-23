@@ -1,0 +1,120 @@
+/* Reset e base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f8;
+  padding: 40px 20px;
+  color: #111827;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* Títulos */
+h1 {
+  text-align: center;
+  color: #3b82f6;
+  margin-bottom: 24px;
+  font-size: 28px;
+}
+
+h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 22px;
+  color: #111827;
+}
+
+/* Formulário */
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+
+input[type="text"] {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #3b82f6;
+}
+
+button {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
+
+/* Lista de tarefas */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+li {
+  background-color: #fff;
+  border: 1px solid #e5e7eb;
+  padding: 14px 18px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: box-shadow 0.2s ease;
+}
+
+li:hover {
+  box-shadow: 0 4px 8px rgba(59, 130, 246, 0.1);
+}
+
+a {
+  color: #ef4444;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #dc2626;
+}
+
+/* Mensagens de erro */
+.error {
+  color: #ef4444;
+  background: #fee2e2;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 500;
+}
